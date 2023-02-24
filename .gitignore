@@ -158,6 +158,7 @@ _output
 /types
 .eslintcache
 
+.svelte-kit/*
 
 lib-cov
 *.seed
@@ -180,7 +181,8 @@ public/css/main.css
 # Coverage reports
 coverage
 
-
+# API keys and secrets
+.env
 
 # Dependency directory
 node_modules
