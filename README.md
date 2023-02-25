@@ -1,5 +1,17 @@
 # REDIS DESIGN PATTERNS
 
+## DESIGN METHODOLOGIES
+
+#### SQL DATABASE DESIGN METHODOLOGY
+
+1. Put the data in tables.
+2. Figure out how we will query it.
+
+#### REDIS DESIGN METHODOLOGY
+
+1. Figure out what queries we need to answer.
+2. Structure data to best answer those queries.
+
 ## 1. CLIENT PAGE CACHED
 
 What is described below is implemented in './src/services/queries/page-cache.ts'.
