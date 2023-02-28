@@ -1,5 +1,9 @@
 # REDIS DESIGN PATTERNS
 
+This project is an eBay-like application that uses Redis as its sole cache storage. It should be noted that this project is not intended for production use, as Redis is a volatile memory and therefore does not provide durability.
+
+The project was developed as part of the [Redis: The Complete Developer's Guide course](https://www.udemy.com/course/redis-the-complete-developers-guide-p/) on Udemy, taught by Stephen Grider.
+
 ## DESIGN METHODOLOGIES
 
 #### SQL DATABASE DESIGN METHODOLOGY
@@ -12,7 +16,7 @@
 1. Figure out what queries we need to answer.
 2. Structure data to best answer those queries.
 
-## 1. CLIENT PAGE CACHED
+## EXAMPLE OF  CLIENT PAGE CACHED
 
 What is described below is implemented in './src/services/queries/page-cache.ts'.
 
