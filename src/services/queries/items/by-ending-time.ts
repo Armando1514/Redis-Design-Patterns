@@ -15,11 +15,10 @@ export const itemsByEndingTime = async (
 		},
 	});
 	const x = await client.hGetAll('items#dc6975');
-	console.log(x);
+
 	const results = await Promise.all(
 		ids.map(id => client.hGetAll(itemsKey(id)))
 	);
-	console.log(results);
 
 	return results.map((item, i) => deserialize(ids[i], item));
 };
